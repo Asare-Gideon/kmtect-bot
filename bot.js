@@ -156,25 +156,32 @@ Respond in a helpful, friendly tone.
 app.post("/api/message", async (req, res) => {
   const { message, clientId } = req.body;
 
-  if (!message) {
-    return res.status(400).json({ error: "Message is required" });
+  try {
+    if (!message) {
+      return res.status(400).json({ error: "Message is required" });
+    }
+
+    console.log("📩 Received message:", message);
+    const prompt = buildPrompt(message);
+    const reply = await getChatGPTReply(prompt);
+
+    if (!reply) {
+      return res
+        .status(500)
+        .json({ error: "Failed to get a response from AI" });
+    }
+
+    res.json({
+      success: true,
+      reply,
+      sender: "KMtec-assistant",
+      message,
+      clientId: clientId || null,
+    });
+  } catch (err) {
+    console.error("❌ Error processing message:", err);
+    res.status(500).json({ error: "Internal server error" });
   }
-
-  console.log("📩 Received message:", message);
-  const prompt = buildPrompt(message);
-  const reply = await getChatGPTReply(prompt);
-
-  if (!reply) {
-    return res.status(500).json({ error: "Failed to get a response from AI" });
-  }
-
-  res.json({
-    success: true,
-    reply,
-    sender: "KMtec-assistant",
-    message,
-    clientId: clientId || null,
-  });
 });
 
 app.listen(port, () => {
