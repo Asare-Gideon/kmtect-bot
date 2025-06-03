@@ -1,0 +1,84 @@
+Locations
+Kmtec Ltd is situated in the UK, London.
+Full Address: 128 City Rd, London EC1V 2NX, United Kingdom
+
+🛠️ Services
+AI consultancy
+
+Embedded systems development
+
+Software integration
+
+Web/app development
+
+Project management solutions
+
+HMI development
+
+IoT prototyping
+
+Technical consultancy:
+
+System development
+
+Software customization
+
+Agile development
+
+Project management
+
+Automotive software consulting
+
+🧠 AI Solutions
+Human-like AI chatbots
+
+AI software for streamlining business operations and growth
+
+🏗️ Products
+Water Tank Level Detector – Smart container for monitoring commodity usage
+
+Smart Container – IoT-based tracking solution with STM microcontroller, Zigbee, Raspberry Pi, Azure IoT Hub
+
+Queue Management Systems (including Queaxis®)
+
+PixlView – Digital Signage Solution for indoor/outdoor high-quality content display
+
+PixlCFS – Customer Feedback Solution using cross-dimensional data points
+
+Image/Object Detection Application
+
+Embedded Level Detector
+
+🏭 Industries Served
+Automotive
+
+Healthcare
+
+Technology
+
+Manufacturing
+
+💻 Technologies
+Languages: C, C++, Java, Python
+
+Tools/Platforms: Matlab/Simulink, Eclipse, REST API, React
+
+Standards: AUTOSAR, ASPICE, ISO26262, MISRA
+
+PLM: PTC Windchill
+
+Methodologies: Agile, Scrum
+
+🎓 Training Programs
+Frontend Web Development
+
+Programming: C, C++, Java, C#, Python, HTML, CSS
+
+CAD Tools: Tinkercad, Windchill PDMLink, OnShape, FreeCAD
+
+Electric Vehicle Powertrain and Motors
+
+Practical workshops included
+
+📬 Contact
+Email: contact@kmtec.co.uk
